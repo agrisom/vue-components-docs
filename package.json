@@ -6,7 +6,8 @@
     "build": "vue-tsc --noEmit && vite build"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "vue-components-ui": "0.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.0.0",
