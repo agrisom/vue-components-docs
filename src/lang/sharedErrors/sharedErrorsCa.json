@@ -1,0 +1,10 @@
+{
+  "401": {
+    "title": "No disposes de permisos per accedir a aquesta pàgina",
+    "hint": "Accedeix com a usuari i torna a intentar-ho"
+  },
+  "404": {
+    "title": "No s'ha trobat la pàgina",
+    "hint": "Comproba la ruta o torna a l'inici"
+  }
+}

@@ -1,7 +1,7 @@
 <template lang="pug">
-router-link(:to="{name: 'Home'}") Home
-router-link(:to="{name: 'PageNotFound'}") PageNotFound
-router-link(:to="{name: 'Forbidden'}") Forbidden
+router-link(:to="{name: 'Home'}") {{ $t('pages.Home') }}
+router-link(:to="{name: 'PageNotFound'}") {{ $t('pages.PageNotFound') }}
+router-link(:to="{name: 'PageForbidden'}") {{ $t('pages.PageForbidden') }}
 </template>
 
 <script lang="ts">

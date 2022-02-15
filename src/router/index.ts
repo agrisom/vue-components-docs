@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory, RouteLocationNormalized, RouteRecordRaw } from 'vue-router';
+import { i18n } from '../lang/configI18n';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -14,11 +15,11 @@ const routes: Array<RouteRecordRaw> = [
   // Error paths
   {
     path: '/forbidden',
-    name: 'Forbidden',
-    component: () => import('../views/Error/Forbidden.vue'),
+    name: 'PageForbidden',
+    component: () => import('../views/Error/PageForbidden.vue'),
   },
   {
-    path: '/pagenotfound',
+    path: '/notfound',
     name: 'PageNotFound',
     component: () => import('../views/Error/PageNotFound.vue'),
   },
@@ -34,7 +35,7 @@ const router = createRouter({
 });
 
 router.beforeEach((to: RouteLocationNormalized) => {
-  document.title = to.name ? to.name.toString() + ' - AGM' : 'AGM';
+  document.title = to.name ? i18n.global.t('pages.' + to.name.toString(), to.name.toString()) + ' - agrisom' : 'agrisom';
 });
 
 export default router;

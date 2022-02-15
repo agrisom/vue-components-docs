@@ -1,6 +1,7 @@
 <template lang="pug">
 h1 404
-h2 Page not found
+h2 {{ $t('error.404.title') }}
+p {{ $t('error.404.hint') }}
 </template>
 
 <script lang="ts">

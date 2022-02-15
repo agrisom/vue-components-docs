@@ -1,0 +1,10 @@
+{
+  "401": {
+    "title": "Access denied for this page",
+    "hint": "Log in and try again"
+  },
+  "404": {
+    "title": "Page not found",
+    "hint": "Go back home"
+  }
+}
