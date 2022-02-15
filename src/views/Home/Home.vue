@@ -1,6 +1,6 @@
 <template lang="pug">
 h1 Homepage
-<UILabel text="Hello world from UILabel"/>
+UILabel(text="Hello world from UILabel")
 </template>
 
 <script lang="ts">
