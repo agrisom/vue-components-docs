@@ -1,9 +1,6 @@
-<template>
-  <h1>Using components from vue-components-ui</h1>
-  <span>version: @0.0.1</span>
-  <p>
-    <UILabel text="Hello world from UILabel"/>
-  </p>
+<template lang="pug">
+h1 Homepage
+<UILabel text="Hello world from UILabel"/>
 </template>
 
 <script lang="ts">
@@ -11,12 +8,12 @@ import { defineComponent } from 'vue';
 import { UILabel } from 'vue-components-ui';
 
 export default defineComponent({
-  name: 'HelloWorld',
+  name: 'Home',
   components: {
     UILabel,
   },
 });
 </script>
 
-<style>
+<style lang="sass">
 </style>
