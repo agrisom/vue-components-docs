@@ -1,3 +1,10 @@
 {
-  "recommendations": ["johnsoncodehk.volar"]
+  "recommendations": [
+    "mhutchie.git-graph",
+    "akamud.vscode-theme-onelight",
+    "pkief.material-icon-theme",
+    "johnsoncodehk.volar",
+    "syler.sass-indented",
+    "dariofuzinato.vue-peek"
+  ]
 }
