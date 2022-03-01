@@ -6,6 +6,20 @@ import { resolve } from 'path'
 export default defineConfig({
   plugins: [vue()],
   base: './',
+  css: {
+    preprocessorOptions: {
+      sass: {
+        additionalData: (content: string) => {
+          const LF = '\n';
+          const paths = [
+            '@use \'sass:math\'',
+            '@use \'@/styles/components/_uicomponents.sass\'',
+          ];
+          return paths.join(LF) + LF + content;
+        },
+      }
+    }
+  },
   resolve: {
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue', '.sass'],
     alias: {

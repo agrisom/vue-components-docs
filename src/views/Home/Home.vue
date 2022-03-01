@@ -1,17 +1,16 @@
 <template lang="pug">
 h1 {{ $t('pages.Home') }}
-UILabel(:text="t('testLang')")
+UILabel(:text="t('testLang')" v-model:color="label.color")
+UIIcon(name="home")
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { UILabel } from 'vue-components-ui';
+import { defineComponent, reactive } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 export default defineComponent({
   name: 'Home',
   components: {
-    UILabel,
   },
   setup() {
     const { t } = useI18n({
@@ -27,10 +26,15 @@ export default defineComponent({
         },
       },
     });
-    return { t };
+    const label = reactive({
+      color: '#5bb9b2',
+    });
+    return { t, label };
   },
 });
 </script>
 
 <style lang="sass">
+.label
+  $label-color: blue
 </style>

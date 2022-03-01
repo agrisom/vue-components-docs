@@ -5,6 +5,8 @@ nav.app__nav
   MobileNav
 main.app__main
   router-view
+.svgsprites
+  include ./assets/sprite-icons.svg
 </template>
 
 <script lang="ts">
@@ -20,3 +22,9 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss">
+.svgsprites{
+  display: none
+}
+</style>
